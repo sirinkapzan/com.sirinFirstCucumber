@@ -4,19 +4,16 @@ Feature: Amazon Search
   Scenario: TC01 kullanici amazonda kelime aratir
     Given kullanici amazon anasayfasinda
     Then kullanici nutella aramasi yapar
-    And sonuclari test eder Nutella iceriyor mu
+    Then sonuclarin Nutella icerdigini test eder
     And sayfayi kapatir
 
-  @Java
-  Scenario: TestCase02 Amazonda Java ara
-    Given amazon anasayfaya git
-    Then Java aramasi yap
-    And sonuclarda Java var mi Test et
-    And sayfayi kapat
+    @Java
+    Scenario: TC02 kullanici amazonda kelime aratir
+      Given kullanici amazon anasayfasinda
+      Then kullanici java aramasi yapar
+      And sonuclarin java icerdigini test eder
+      And sayfayi kapatir
 
-  @Iphone
-  Scenario: TC03 amazonda iphone ara
-    Given amazon anasayfaya git
-    Then iphone aramasi yap
-    And sonuclarda Iphone var mi Test et
-    And sayfayi kapat
+
+
+

@@ -1,8 +1,8 @@
-Feature: Parametre kullanarak arama yap
+Feature: US1003 Parametre kullanarak arama yap
 
   @parameter
-  Scenario: parametre kullanarak arama yap
-    Given amazon anasayfaya git
+  Scenario: kullanici parametre kullanarak arama yap
+    Given kullanici amazon anasayfasinda
     Then kullanici "Java" aramasi yapar
-    And sonuclari test eder "Java" iceriyor mu
-    And sayfayi kapat
+    And sonuclarin "Java" icerdigini test eder
+    And sayfayi kapatir
