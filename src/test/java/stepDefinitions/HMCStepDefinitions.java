@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -38,4 +39,16 @@ public class HMCStepDefinitions {
 
     }
 
+
+    @And("user gecersiz username {string} girer")
+    public void userGecersizUsernameGirer(String username) {
+        hmcPage.username.sendKeys(username);
+
+
+    }
+
+    @And("user gecersiz password {string} girer")
+    public void userGecersizPasswordGirer(String password) {
+        hmcPage.password.sendKeys(password);
+    }
 }

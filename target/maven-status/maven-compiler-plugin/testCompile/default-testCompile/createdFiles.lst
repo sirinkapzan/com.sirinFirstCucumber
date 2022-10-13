@@ -1,0 +1,10 @@
+pages\AmazonPage.class
+stepDefinitions\AmazonStepDefinitions.class
+runners\TestRunner.class
+stepDefinitions\DatatablesStepDefinitions.class
+utilities\Driver.class
+pages\HMCPage.class
+stepDefinitions\Hooks.class
+pages\DataTablesPage.class
+utilities\ConfigReader.class
+stepDefinitions\HMCStepDefinitions.class
